@@ -5,6 +5,12 @@ export default defineConfig({
   plugins: [react()],
   root: 'src',
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    rollupOptions: {
+      external: [
+        // Add the path to your App.jsx file here
+        './src/App.jsx'
+      ]
+    }
   }
 })
