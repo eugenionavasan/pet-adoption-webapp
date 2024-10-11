@@ -5,9 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    sourcemap: true,
     rollupOptions: {
       external: [
-        './src/app.jsx'
+        './src/App.jsx'
       ]
     }
   }
