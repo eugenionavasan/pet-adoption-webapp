@@ -3,13 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  root: 'src',
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      external: [
-        './src/App.jsx'
-      ]
-    }
+    rollupOptions: './src/index.htm'
   }
 })
