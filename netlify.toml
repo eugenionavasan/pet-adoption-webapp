@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"  # Match your local Node.js version
+  VITE_LOG_LEVEL = "info"  # This will give you more detailed logs to help with debugging
